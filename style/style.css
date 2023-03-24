@@ -1,2 +1,128 @@
 @charset "UTF-8";
 
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color: #011126;
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 2em;
+}
+
+p{
+    font-size: 0.8em;
+}
+
+section#login{
+    background-color: rgb(240, 240, 240);
+    width: 80vw;
+    height: 80vh;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px #000000a0;
+    transition: width 0.4s, height 0.4s;
+    transform: translate(-50%, -50%);
+    transition-timing-function: ease-in-out;
+}
+
+div#img{
+    display: block;
+    background: #8C6C84 url(../img/bridgesmall.jpg);
+    height: 200px;
+    background-size: cover;
+}
+
+div#form{
+    display: block;
+    padding: 12px;
+}
+
+input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #F28379;
+    margin-top: 12px;
+    border: none;
+    border-radius: 4px;
+}
+
+form > div.campo{
+    background-color: #AB7889;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 3px solid #AB7889;
+    border-radius: 6px;
+    margin: 5px 0px;
+}
+
+form label{
+    display: none;
+}
+
+.campo > span{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+.campo > input{
+    background-color:#efefef;
+    font-size: 1em;
+    width: calc(100% - 44px);
+    height: 100%;
+    border: 0px;
+    border-radius: 6px;
+    padding: 4px;
+    transform: translateY(-14px);
+}
+
+.campo > input:focus-within{
+    background-color: #f0f0f0;
+    border: 0px;
+}
+
+input[type=submit]:hover{
+    background-color: #F29B9B;
+    cursor: pointer;
+}
+
+form > a.button{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #F28379;
+    margin-top: 8px;
+}
+
+form > a.button:hover{
+    background-color: #F29B9B;
+}
